@@ -1,0 +1,12 @@
+.child{
+  width: 100px; 
+  height: 100px; 
+  color: white;
+  background-color: orange;
+  margin: 5px;
+  font-size: 3em;
+  padding: 10px;
+}
+#container{
+    display: flex;
+}

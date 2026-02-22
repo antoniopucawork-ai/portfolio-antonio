@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body{
+    display : flex;
+margin: 0 ;
+height: 100vh;
+font-family: "Montserrat", sans-serif;
+}
+#main{
+    width: 100%;
+}
+#content{
+    height: 100%;
+
+}
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-icon{
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.sidebar-icon p{
+    margin: 0;
+ } 
+ .sidebar-icon ion-icon{
+    font-size: 1.5em;}
+#topbar{
+    height: 8vh;
+    display: flex;
+}
+#logo{
+    height: 80px;
+}
+ 
