@@ -1,0 +1,108 @@
+h1 {
+  color: rgb(244, 246, 242);
+  font-size: 2.5rem;
+}
+header{ background: linear-gradient(to right, #6eff69, #ffb3de)
+ rgb(255, 127, 236);
+    padding: 40px;
+    text-align: center;}
+    p{color: #0544c2;
+  font-size: 2em;
+  margin-top: 10px;
+
+    }
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+
+}
+/* HEADER FLEXBOX */
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #f5f5f5;
+
+}
+.menu ul {
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+.menu a {
+
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+
+}
+
+.menu a:hover {
+
+    color: red;
+
+}
+.container-piatti {
+      display: flex;
+
+    gap: 20px;
+    padding: 40px;}
+
+
+
+
+
+.card {
+
+    
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background-color: #f4f4f4;
+
+    font-family: Arial;
+
+}
