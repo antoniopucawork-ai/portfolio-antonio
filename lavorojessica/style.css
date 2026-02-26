@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #e6f4f7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#2f5d62;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #3aa6a0;
+}
+.servizi {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.servizi h2 {
+    color: #2f5d62;
+    margin-bottom: 40px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.card h3 {
+    color: #3aa6a0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+.presentazione {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.presentazione h2 {
+    color: #3a6f73;
+    margin-bottom: 20px;
+}
+
+.presentazione p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.chi-sono {
+    background-color: #f5f8f8;
+    padding: 80px 0;
+    
+}
+
+.chi-sono h2 {
+    text-align: center;
+    color: #2f5d62;
+    margin-bottom: 30px;
+}
+
+.chi-sono p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+    color: #444;
+
+}
+.chi-sono-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    max-width: 900px;
+    margin: 0 auto;
+
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+.chi-sono-foto img {
+    width: 260px;
+    border-radius: 20px;
+}
+
+.chi-sono-testo {
+    max-width: 600px;
+}
+.servizi {
+    background-color: #f5f8f8;
+    padding: 80px 0;
+}
+
+.servizi-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servizio {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    text-align: center;
+    width: 250px;
+}
+
+.servizio h3 {
+    color: #3a6a6a;
+    margin-bottom: 15px;
+}
+
+.servizio p {
+    color: #444;
+    line-height: 1.6;
+}
+.contatti {
+    background-color: #f5f8f8;
+    padding: 80px 0;
+}
+
+.contatti-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.contatti-container h2 {
+    text-align: center;
+    color: #2f5d62;
+    margin-bottom: 40px;
+}
+
+.contatto {
+    margin-bottom: 30px;
+}
+
+.contatto h3 {
+    color: #3a6a6a;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.contatto p {
+    color: #444;
+    font-size: 16px;
+}
+.contatto a {
+    color: #2f5d62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contatto a:hover {
+    text-decoration: underline;
+}
