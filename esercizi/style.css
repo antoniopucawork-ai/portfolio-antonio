@@ -1,108 +1,133 @@
-h1 {
-  color: rgb(244, 246, 242);
-  font-size: 2.5rem;
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f2;
 }
-header{ background: linear-gradient(to right, #6eff69, #ffb3de)
- rgb(255, 127, 236);
-    padding: 40px;
-    text-align: center;}
-    p{color: #0544c2;
-  font-size: 2em;
-  margin-top: 10px;
 
-    }
-    nav ul {
-    list-style: none;
+
+/* HEADER */
+header {
     display: flex;
-    gap: 20px;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: red;
-
-}
-/* HEADER FLEXBOX */
-.header {
-
-    display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 
-    padding: 20px;
+    padding: 30px 40px;
 
-    background-color: #f5f5f5;
+    background: linear-gradient(
+        to right,
+        rgba(46, 125, 50, 0.25),
+        rgba(255, 255, 255, 0.8),
+        rgba(169, 50, 50, 0.25)
+    );
 
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.menu ul {
 
+
+/* LOGO BOX */
+.logo {
     display: flex;
+    flex-direction: column;
 
-    gap: 20px;
+    border: 2px solid rgba(255,255,255,0.8);
+    padding: 12px 22px;
+    border-radius: 12px;
+
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+/* TITOLO */
+.logo h1 {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 2.5rem;
+}
+
+
+/* SOTTOTITOLO */
+.cucina {
+    margin-top: 6px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 6px 14px;
+    border-radius: 8px;
+
+    background-color: rgba(255,255,255,0.6);
+
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* MENU */
+.menu ul {
+    display: flex;
+    gap: 30px;
 
     list-style: none;
-
     margin: 0;
-
     padding: 0;
-
 }
+
+
+/* LINK */
 .menu a {
-
     text-decoration: none;
-
-    color: black;
-
+    color: #333;
     font-weight: bold;
 
+    transition: 0.3s;
 }
 
+
+/* HOVER */
 .menu a:hover {
-
-    color: red;
-
+    color: #a93232;
 }
+
+
+/* CONTAINER PIATTI */
 .container-piatti {
-      display: flex;
-
-    gap: 20px;
-    padding: 40px;}
-
-
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
 
 
-
+/* CARD */
 .card {
-
-    
-
     flex: 1;
 
     background-color: white;
 
-    padding: 20px;
+    padding: 25px;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 
+    transition: 0.3s;
 }
 
 
-body {
+/* HOVER CARD */
 
-    margin: 0;
 
-    background-color: #f4f4f4;
 
-    font-family: Arial;
-
+/* TITOLI PIATTI */
+.card h2 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+.contatti-box{
+    padding: 20px;
+}
+.contatti-container{
+    padding: 50px;
+    
+}
+.menu-container{
+    padding: 20px;
 }
