@@ -97,22 +97,27 @@ nav a:hover {
     
 }
 
+   
+
+
 .chi-sono h2 {
     text-align: center;
     color: #2f5d62;
     margin-bottom: 30px;
 }
-
-.chi-sono p {
-    margin-bottom: 18px;
-    line-height: 1.7;
-    color: #444;
-
+.chi-sono-testo p {
+    line-height: 1.8;
+    color: #445c5f;
+    font-size: 16px;
+    margin: 0;
 }
+
+
+
 .chi-sono-container {
     display: flex;
-    align-items: flex-start;
-    gap: 25px;
+    align-items: center;
+    gap: 50px;
 
     max-width: 900px;
     margin: 0 auto;
@@ -129,6 +134,8 @@ nav a:hover {
 
 .chi-sono-testo {
     max-width: 600px;
+    color: #666666;
+
 }
 .servizi {
     background-color: #f5f8f8;
@@ -163,7 +170,7 @@ nav a:hover {
 }
 .contatti {
     background-color: #f5f8f8;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .contatti-container {
