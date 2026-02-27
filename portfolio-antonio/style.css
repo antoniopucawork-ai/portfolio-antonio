@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+
+.hero {
+    background: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+
+section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.skills h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.project-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.projects p {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+.contact p {
+    font-weight: 500;
+}
+.skills-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+
+.skill-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+}
+
+.skill-box h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.skill-box ul {
+    list-style: none;
+}
+
+.skill-box li {
+    margin-bottom: 8px;
+}
+.botton {
+  color: white;
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.botton:hover {
+  background-color: blue;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 30px;}
+
+    .contact-box {
+        text-align: center;
+  color: cadetblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+.contact-box a {
+    
+  color: cadetblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+.about-img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+  border-radius: 15px;
+  box-shadow:0 10px 25px ;
+}
+html {
+  scroll-behavior: smooth;
+}
