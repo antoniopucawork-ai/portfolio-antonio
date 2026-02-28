@@ -1,0 +1,161 @@
+:root {
+  --legno-scuro: #4A3428;
+  --verde-profondo: #1F3A37;
+  --celeste-chiaro: #E8F1F5;
+  --beige-chiaro: #F5F0EA;
+  --bianco: #FFFFFF;
+  --testo-scuro: #1C1C1C;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--celeste-chiaro);
+  color: var(--testo-scuro);
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  
+  
+}
+
+
+header {
+  background-color: var(--legno-scuro);
+  color: var(--bianco);
+  padding: 30px 40px;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--celeste-chiaro);
+  font-weight: 500;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+section {
+  margin-bottom: 60px;
+}
+
+.hero {
+  background-color: var(--beige-chiaro);
+  padding: 80px 60px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+ 
+}
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 25px;
+  max-width: 800px;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--verde-profondo);
+  color: var(--bianco);
+  text-decoration: none;
+  border-radius: 4px;
+}
+.hero p {
+  font-size: 30px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.professionisti {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.professionisti article {
+  background-color: var(--beige-chiaro);
+  padding: 30px;
+  border-radius: 8px;
+  flex:  1 1 300px;;
+  min-width: 280px;
+  transition: 0.3s ease;
+  border: 2px solid #1C1C1C;
+}
+
+.professionisti article:hover {
+  transform: translateY(-5px);
+}
+
+
+.cta {
+  display: inline-block;
+  background-color: var(--verde-profondo);
+  color: var(--bianco);
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  background-color: var(--legno-scuro);
+}
+.professionisti {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.boss {
+  background-color: var(--beige-chiaro);
+  color: var(--testo-scuro);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+   border: 2px solid var(--legno-scuro);;
+}
+
+
+.figli {
+  display: flex;
+  gap: 40px;
+}
+
+.figli article {
+  background-color: var(--beige-chiaro);
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+}
+.presentazione h2 {
+  font-size: 40px;
+}
+.presentazione p {
+  font-size: 25px;
+}
