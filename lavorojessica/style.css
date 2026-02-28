@@ -211,3 +211,63 @@ nav a:hover {
 .contatto a:hover {
     text-decoration: underline;
 }
+
+
+.formazione {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.formazione h2 {
+    margin-bottom: 60px;
+    color: #2f5d62;
+    font-size: 28px;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 3px solid #2f5d62;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-color: #2f5d62;
+    border-radius: 50%;
+}
+
+.anno {
+    font-weight: bold;
+    color: #2f5d62;
+    margin-bottom: 8px;
+}
+
+.contenuto {
+    line-height: 1.7;
+    color: #333;
+}
+
+.timeline-item {
+    padding-bottom: 10px;
+}
+
+
+
+.psi {
+    font-size: 36px;
+    margin-left: 8px;
+    color: #2f5d62;
+    position: relative;
+    top: -2px;
+}
