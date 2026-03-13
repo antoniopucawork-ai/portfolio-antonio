@@ -1,13 +1,13 @@
 :root{
-  --primary:#4FA7A0;
-  --primary-dark:#3B8E88;
-  --primary-soft:#7CBDB7;
+--primary:#4FA7A0;
+--primary-dark:#3B8E88;
+--primary-soft:#7CBDB7;
 
-  --bg-soft:#F4F8F8;
-  --bg-header:#E8F2F2;
+--bg-soft:#F4F8F8;
+--bg-header:#E8F2F2;
 
-  --text-main:#2E4F4F;
-  --text-body:#555;
+--text-main:#2E4F4F;
+--text-body:#555;
 }
 
 /* BASE */
@@ -27,6 +27,22 @@ text-align:center;
 padding:40px 20px;
 }
 
+.header-top{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+}
+
+.logo-header{
+width:240px;
+height:auto;
+}
+
+.header-text{
+text-align:left;
+}
+
 header h1{
 margin:0;
 font-size:28px;
@@ -37,14 +53,6 @@ header p{
 margin:5px 0;
 font-size:16px;
 color:var(--text-body);
-}
-
-.psi{
-font-size:36px;
-margin-left:8px;
-color:var(--primary);
-position:relative;
-top:-2px;
 }
 
 /* NAVIGATION */
@@ -114,6 +122,7 @@ text-align:center;
 position:relative;
 overflow:hidden;
 }
+
 .hero::before{
 content:"";
 position:absolute;
@@ -140,7 +149,6 @@ line-height:1.3;
 
 .hero p{
 font-size:18px;
-color:var(--text-body);
 line-height:1.7;
 margin-bottom:12px;
 }
@@ -170,18 +178,24 @@ text-align:center;
 }
 
 .servizi h2{
+font-size:32px;
 color:var(--text-main);
-margin-bottom:40px;
+margin-bottom:20px;
+}
+
+.servizi-intro{
+max-width:650px;
+margin:0 auto 60px auto;
+line-height:1.7;
+font-size:17px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:30px;
-margin-top:40px;
 max-width:700px;
-margin-left:auto;
-margin-right:auto;
+margin:40px auto 0 auto;
 }
 
 .card{
@@ -189,13 +203,18 @@ background:white;
 padding:35px;
 border-radius:20px;
 box-shadow:0 15px 35px rgba(0,0,0,0.08);
-text-align:center;
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
 box-shadow:0 20px 45px rgba(0,0,0,0.12);
+}
+
+.card-icon{
+font-size:32px;
+display:block;
+margin-bottom:15px;
 }
 
 .card h3{
@@ -205,44 +224,14 @@ font-size:20px;
 }
 
 .card p{
-color:var(--text-body);
 line-height:1.7;
 font-size:15px;
 }
 
-/* PRESENTAZIONE */
-
-.presentazione{
-padding:120px 20px;
-text-align:center;
-max-width:900px;
-margin:0 auto;
-}
-
-.presentazione h2{
-color:var(--text-main);
-font-size:30px;
-margin-bottom:35px;
-}
-
-.presentazione p{
-color:var(--text-body);
-line-height:1.8;
-font-size:17px;
-max-width:650px;
-margin:0 auto 18px auto;
-}
 /* CHI SONO */
 
 .chi-sono{
-background:var(--bg-soft);
-padding:80px 0;
-}
-
-.chi-sono h2{
-color:var(--text-main);
-font-size:30px;
-margin-bottom:20px;
+padding:80px 20px;
 }
 
 .chi-sono-container{
@@ -265,197 +254,19 @@ box-shadow:0 20px 40px rgba(0,0,0,0.15);
 
 .chi-sono-testo{
 max-width:420px;
-color:var(--text-body);
-display:flex;
-flex-direction:column;
-justify-content:center;
 }
 
 .chi-sono-testo p{
 line-height:1.8;
 font-size:16px;
 margin-bottom:14px;
-text-align:justify;
 }
 
 /* CONTATTI */
 
-.contatti-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
-margin-top:40px;
-}
-
-.contatto-card{
-background:white;
-padding:30px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.06);
-text-align:center;
-transition:0.3s;
-}
-
-.contatto-card:hover{
-transform:translateY(-6px);
-box-shadow:0 15px 35px rgba(0,0,0,0.12);
-}
-
-.contatto-icon{
-font-size:30px;
-display:block;
-margin-bottom:10px;
-}
-
-.contatto-card h3{
-color:var(--primary);
-margin-bottom:8px;
-}
-
-.contatto-card a{
-text-decoration:none;
-color:var(--text-body);
-}
-
-.contatto-card a:hover{
-color:var(--primary);
-}
-
-/* FORMAZIONE */
-
-.formazione{
-padding:80px 20px;
-text-align:center;
-}
-
-.formazione h2{
-margin-bottom:60px;
-color:var(--text-main);
-font-size:28px;
-}
-
-.timeline{
-max-width:700px;
-margin:80px auto;
-}
-
-.timeline-item{
-background:white;
-padding:25px 30px;
-border-radius:12px;
-margin-bottom:25px;
-box-shadow:0 8px 20px rgba(0,0,0,0.06);
-transition:0.3s;
-}
-
-.timeline-item:hover{
-transform:translateY(-4px);
-box-shadow:0 12px 30px rgba(0,0,0,0.1);
-}
-
-.anno{
-font-size:18px;
-font-weight:600;
-color:var(--primary);
-margin-bottom:8px;
-}
-
-.contenuto{
-line-height:1.7;
-font-size:16px;
-color:var(--text-body);
-}
-.approccio-intro{
-font-size:20px;
-color:var(--text-main);
-margin-bottom:20px;
-font-weight:500;
-}
-.approccio-punti{
-display:flex;
-justify-content:center;
-gap:40px;
-margin-top:50px;
-flex-wrap:wrap;
-}
-
-.punto{
-background:white;
-padding:25px;
-border-radius:15px;
-max-width:240px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.punto h3{
-color:var(--primary);
-margin-bottom:10px;
-font-size:18px;
-}
-
-.punto p{
-font-size:15px;
-line-height:1.6;
-}
-.card-icon{
-font-size:32px;
-display:block;
-margin-bottom:15px;
-}
-.servizi h2{
-font-size:32px;
-color:var(--text-main);
-margin-bottom:20px;
-}
-
-.servizi-intro{
-max-width:650px;
-margin:0 auto 60px auto;
-line-height:1.7;
-font-size:17px;
-color:var(--text-body);
-}
-/* SERVIZI PAGINA */
-
-.servizi-container{
-display:flex;
-justify-content:center;
-align-items:stretch;
-gap:40px;
-max-width:1000px;
-margin:60px auto 0 auto;
-}
-
-.servizio{
-background:white;
-padding:35px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-width:280px;
-text-align:center;
-transition:0.3s;
-border-top:4px solid var(--primary);
-}
-
-.servizio:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 45px rgba(0,0,0,0.12);
-}
-
-.servizio h3{
-color:var(--primary);
-margin-bottom:15px;
-font-size:22px;
-}
-
-.servizio p{
-color:var(--text-body);
-line-height:1.7;
-font-size:16px;
-}
 .contatti-lista{
 max-width:500px;
-margin:40px auto 0 auto;
+margin:40px auto;
 display:flex;
 flex-direction:column;
 gap:30px;
@@ -469,7 +280,6 @@ gap:15px;
 
 .icon{
 font-size:22px;
-margin-top:3px;
 }
 
 .contatto-riga h3{
@@ -490,29 +300,7 @@ color:var(--text-body);
 .contatto-riga a:hover{
 color:var(--primary);
 }
-.titolo-sezione{
-text-align:center;
-font-size:32px;
-color:var(--text-main);
-margin-bottom:50px;
-}
-.header-top{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:30px;
-}
 
-.logo-header{
-width:240px;
-height:auto;
-margin-left:50px;
-margin-right:0px;
-}
-
-.header-text{
-text-align:left;
-}
 /* FOOTER */
 
 .footer{
@@ -538,12 +326,7 @@ margin-bottom:5px;
 }
 
 .footer p{
-color:var(--text-body);
 line-height:1.6;
-}
-
-.footer-contatti{
-margin-top:20px;
 }
 
 .footer a{
@@ -559,4 +342,67 @@ text-decoration:underline;
 margin-top:30px;
 font-size:14px;
 opacity:0.7;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width:768px){
+
+.header-top{
+flex-direction:column;
+text-align:center;
+}
+
+.logo-header{
+width:130px;
+}
+
+.header-text{
+text-align:center;
+}
+
+nav ul{
+flex-wrap:wrap;
+gap:12px;
+}
+
+.hero{
+padding:50px 20px;
+}
+
+.hero h2{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero::before{
+width:300px;
+height:300px;
+top:-100px;
+right:-120px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.chi-sono-container{
+flex-direction:column;
+text-align:center;
+padding:30px;
+}
+
+.chi-sono-foto img{
+width:200px;
+}
+
+.contatto-riga{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
 }

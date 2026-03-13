@@ -1,57 +1,76 @@
 :root {
-  --legno-scuro: #4A3428;
+  --legno-scuro: #3B261B;
   --verde-profondo: #1F3A37;
-  --celeste-chiaro: #E8F1F5;
   --beige-chiaro: #F5F0EA;
+  --beige-scuro: #E8E0D6;
   --bianco: #FFFFFF;
   --testo-scuro: #1C1C1C;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 
 body {
-  background-color: var(--celeste-chiaro);
+  background-color: var(--beige-scuro);
   color: var(--testo-scuro);
   font-family: "Georgia", serif;
   line-height: 1.6;
-  
-  
+  font-size: 18px;
 }
 
+/* HEADER */
 
 header {
   background-color: var(--legno-scuro);
   color: var(--bianco);
-  padding: 30px 40px;
+  padding: 40px 0;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
+/* MENU */
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-}
-nav a {
-  text-decoration: none;
-  color: var(--celeste-chiaro);
-  font-weight: 500;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: var(--beige-chiaro);
+  padding: 6px 12px;
+  border: 1px solid var(--beige-chiaro);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
+nav a:hover {
+  background-color: var(--beige-chiaro);
+  color: var(--legno-scuro);
+}
+
+/* MAIN */
 
 main {
   max-width: 1100px;
@@ -59,22 +78,29 @@ main {
   padding: 0 20px;
 }
 
-
 section {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
+
+/* HERO */
 
 .hero {
   background-color: var(--beige-chiaro);
   padding: 80px 60px;
   border-radius: 10px;
   margin-bottom: 80px;
- 
 }
+
 .hero h2 {
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 25px;
   max-width: 800px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 .hero a {
@@ -85,62 +111,75 @@ section {
   color: var(--bianco);
   text-decoration: none;
   border-radius: 4px;
-}
-.hero p {
-  font-size: 30px;
-  max-width: 600px;
-  margin-bottom: 30px;
-}
-.professionisti {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+  transition: 0.2s;
 }
 
-.professionisti article {
-  background-color: var(--beige-chiaro);
-  padding: 30px;
-  border-radius: 8px;
-  flex:  1 1 300px;;
-  min-width: 280px;
-  transition: 0.3s ease;
-  border: 2px solid #1C1C1C;
+.hero a:hover {
+  opacity: 0.9;
 }
 
-.professionisti article:hover {
-  transform: translateY(-5px);
-}
+/* PROFESSIONISTI */
 
-
-.cta {
-  display: inline-block;
-  background-color: var(--verde-profondo);
-  color: var(--bianco);
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.cta:hover {
-  background-color: var(--legno-scuro);
-}
 .professionisti {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 60px;
 }
+
+.professionisti article {
+  background-color: var(--beige-chiaro);
+  padding: 35px;
+  border-radius: 8px;
+  border: 1px solid #d6cec4;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.professionisti article h3 {
+  color: var(--legno-scuro);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.professionisti article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.professionisti a {
+  color: var(--verde-profondo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.professionisti a:hover {
+  text-decoration: underline;
+}
+
+/* LINK CTA */
+
+.cta {
+  display: inline-block;
+  color: var(--legno-scuro);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* CARD PADRE */
 
 .boss {
   background-color: var(--beige-chiaro);
   color: var(--testo-scuro);
-  padding: 40px;
+  padding: 35px;
   border-radius: 10px;
   font-size: 20px;
-   border: 2px solid var(--legno-scuro);;
+  border: 1px solid #d6cec4;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
+/* CARD FIGLI */
 
 .figli {
   display: flex;
@@ -153,9 +192,101 @@ section {
   border-radius: 8px;
   flex: 1;
 }
+
+/* PRESENTAZIONE */
+
 .presentazione h2 {
   font-size: 40px;
+  margin-bottom: 20px;
 }
+
 .presentazione p {
-  font-size: 25px;
+  font-size: 22px;
+}
+
+/*COME LAVORIAMO */
+
+.metodo {
+margin-top: 40px;
+max-width: 700px;
+}
+
+.fasi {
+margin-top: 60px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+
+.fasi h2 {
+grid-column: span 2;
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.fasi article {
+background-color: var(--beige-chiaro);
+padding: 25px;
+border-radius: 8px;
+border: 1px solid #d6cec4;
+}
+
+.fasi h4 {
+color: var(--legno-scuro);
+font-size: 22px;
+margin-bottom: 10px;
+}
+.fasi h4::before {
+font-weight: bold;
+color: var(--verde-profondo);
+margin-right: 6px;
+}
+
+.contatto {
+margin-top: 80px;
+}
+footer {
+background-color: var(--legno-scuro);
+color: var(--beige-chiaro);
+padding: 60px 20px;
+margin-top: 100px;
+}
+
+.footer-container {
+max-width: 1100px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}
+
+.footer-col {
+flex: 1;
+}
+
+.footer-col h4 {
+margin-bottom: 15px;
+}
+
+.footer-col ul {
+list-style: none;
+}
+
+.footer-col a {
+color: var(--beige-chiaro);
+text-decoration: none;
+}
+
+.footer-col a:hover {
+text-decoration: underline;
+}
+
+.footer-copy {
+text-align: center;
+margin-top: 50px;
+font-size: 14px;
+opacity: 0.8;
+}
+.footer-col ul li {
+margin-bottom: 6px;
 }
