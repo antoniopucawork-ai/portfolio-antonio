@@ -1,42 +1,95 @@
 /* ===== RESET BASE ===== */
-body{
-margin:0;
-font-family:'Outfit', sans-serif;
-background: radial-gradient(circle at top, #1e293b, #020617 70%);
-color:white;
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+
+    background:
+        radial-gradient(circle at 50% 20%, rgba(0,255,255,0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255,0,255,0.1), transparent 40%),
+        linear-gradient(to bottom, #020617, #000000 70%);
+
+    color: #00ffff;
+
+    position: relative;
 }
-
-
-/* ===== HEADER ===== */
-
-header{
-background:linear-gradient(135deg,#020617,#1e293b,#0f172a);
-padding:120px 20px;
-text-align:center;
-position: relative;
-    overflow: hidden;
-}
-header::before {
+body::before {
     content: "";
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(99,102,241,0.2), transparent 70%);
-    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+    linear-gradient(rgba(0,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.02) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    pointer-events: none;
 }
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.05) 0px,
+        rgba(255,255,255,0.05) 1px,
+        transparent 2px,
+        transparent 4px
+    );
+
+    pointer-events: none;
+}
+/* ===== HEADER ===== */
+header {
+    background: transparent;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
 
 header h1 {
-    font-size: 56px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 1.2;
-    text-shadow: 0 0 20px rgba(99,102,241,0.4);
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 2px #00ffff,
+        0 0 6px rgba(0,255,255,0.6);
+
+    letter-spacing: 2px;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: fadeUp 1.2s ease forwards;
 }
-header p{
-font-size:18px;
-opacity:0.8;
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 0 6px rgba(255,0,255,0.3);
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.4s;
 }
 
 
@@ -63,12 +116,17 @@ margin:auto;
 padding:80px 20px;
 }
 
-h2{
-text-align:center;
-margin-bottom:40px;
-font-size:32px;
-}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
 
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 8px rgba(255,0,255,0.4);
+}
 
 /* ===== ABOUT ===== */
 
@@ -93,23 +151,29 @@ margin:auto;
 
 /* ===== CARD ===== */
 
-.card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:15px;
-border:1px solid rgba(255,255,255,0.1);
-text-align:center;
-cursor:pointer;
-transition:all 0.35s ease;
-text-decoration:none;
-color:inherit;
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0,255,255,0.2);
+
+    padding: 30px;
+    border-radius: 10px;
+
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+    transition: all 0.3s ease;
 }
 
-.card:hover{
-transform:translateY(-10px) scale(1.03);
-background:rgba(255,255,255,0.08);
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
+.card:hover {
+    transform: translateY(-8px);
+
+    border: 1px solid #00ffff;
+
+    box-shadow:
+        0 0 8px rgba(0,255,255,0.6),
+        0 0 20px rgba(0,255,255,0.4);
 }
 
 
@@ -129,9 +193,8 @@ transform:scale(1.05);
 
 /* ===== CARD TEXT ===== */
 
-.card h3{
-font-size:20px;
-margin-bottom:10px;
+.card h3 {
+    color: #00ffff;
 }
 
 .card p{
@@ -328,4 +391,42 @@ transition:0.3s;
         gap: 20px;
     }
 
+}
+.neon-line {
+    width: 200px;
+    height: 2px;
+    margin: 30px auto;
+
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+
+    box-shadow:
+        0 0 5px #00ffff,
+        0 0 10px rgba(0,255,255,0.6);
+
+    opacity: 0;
+
+    animation: lineFade 1.2s ease forwards, pulse 2s infinite ease-in-out;
+    animation-delay: 0.6s;
+}
+@keyframes lineFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleX(1.2);
+    }
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
